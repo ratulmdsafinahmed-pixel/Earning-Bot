@@ -6,7 +6,8 @@
     <title>Earnmoney App</title>
     
     <!-- apnar   Ad Code din -->
-    <script src='//libtl.com/sdk.js' data-zone='9848352' data-sdk='show_9848352'></script>
+    
+<script src="https://ad.gigapub.tech/script?id=3079"></script>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -571,23 +572,23 @@
                 return showAlert("আপনার আজকের বিজ্ঞাপন দেখার সীমা শেষ হয়েছে।");
             }
             
-            if (typeof window.show_9797430 !== 'function') {
+            if (typeof window.show_3079 !== 'function') {
                 return showAlert("বিজ্ঞাপন পরিষেবা এখন উপলব্ধ নেই। দয়া করে পরে চেষ্টা করুন।");
             }
             
             let adPromise;
             switch(taskType) {
                 case 'interstitial':
-                    adPromise = window.show_9848352();
+                    adPromise = window.show_3079();
                     break;
                 case 'popup':
-                    adPromise = window.show_9848352('pop');
+                    adPromise = window.show_3079('pop');
                     break;
                 case 'inApp':
-                    adPromise = window.show_9848352({ type: 'inApp', inAppSettings: { frequency: 2, capping: 0.1, interval: 30, timeout: 5, everyPage: false } });
+                    adPromise = window.show_3079({ type: 'inApp', inAppSettings: { frequency: 2, capping: 0.1, interval: 30, timeout: 5, everyPage: false } });
                     break;
                 case 'miniApp':
-                    adPromise = window.show_9848352();
+                    adPromise = window.show_3079();
                     break;
                 default:
                     return;
@@ -627,4 +628,5 @@
 
     </script>
 </body>
+
 </html>
